@@ -7,19 +7,30 @@
     --padding: 2em;
     font-family: "Karla",sans-serif;
 }
+body {
+    background-color: #e6eff6;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    height: 100vh;
+    justify-content: center;
+}
 
 .container {
     display: grid;
     width: 90%;
     margin: 0 auto;
     font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-body {
-    background-color: #e6eff6;
-}
+
 .hero {
     background-color: white;
-    padding: var(--padding)
+    padding: var(--padding);
+    border-radius: 8px 8px 0 0;
 }
 .hero h3 {
     color: hsl(179, 62%, 43%);
@@ -61,6 +72,7 @@ body {
     width: 100%;
     text-align: center;
     border-radius: 4px;
+    box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .button a {
     color: hsl(204, 43%, 93%) ;
@@ -74,6 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 0 0 8px 8px;
 }
 
 .reasons {
@@ -102,9 +115,11 @@ body {
     }
     .money {
         grid-area: card1;
+        border-radius: 0 0 0 8px;
     }
     .why {
         grid-area: card2;
+        border-radius: 0 0 8px 0;
     }
     .why h4, .money h3 {
         font-size: 20px
