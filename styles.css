@@ -1,0 +1,79 @@
+@import url("https://fonts.google.com/specimen/Karla");
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --padding: 2em;
+    font-family: "Karla",sans-serif;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+body {
+    background-color: #e6eff6;
+}
+.hero {
+    background-color: white;
+    padding: var(--padding)
+}
+.hero h3 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+.description {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+    font-weight: 100;
+}
+.green {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+
+
+.money {
+    background-color: hsl(179, 62%, 43%);
+    padding: var(--padding);
+    color: white;
+}
+.price {
+    color: hsl(204, 43%, 80%);
+    font-size: 14px;
+    letter-spacing: .1em;
+    margin: 20px 0;
+}
+.dollar {
+   font-size: 30px; 
+   color: white;
+   margin-right: 5px;
+   letter-spacing: normal;
+}
+.button {
+    margin-top: 20px;
+    background-color:hsl(71, 73%, 54%);
+    font-size: 16px;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+.button a {
+    color: hsl(204, 43%, 93%) ;
+    text-decoration: none;
+    font-weight: 400;
+}
+.why {
+    background-color: #4abebd;
+    padding: var(--padding);
+    color: white;
+}
+
+.why p {
+    margin-top: 15px;
+    color: hsl(204, 43%, 93%);
+}
